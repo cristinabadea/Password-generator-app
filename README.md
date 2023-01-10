@@ -70,3 +70,5 @@ N/A
 N/A
 
 ## Deployed website
+[Password Generator App](https://cristinabadea.github.io/Password-generator-app/)
+
