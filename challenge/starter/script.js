@@ -160,7 +160,9 @@ function generatePassword() {
   }
 }
 // Function for getting a random element from an array
-function getRandom(arr) {}
+function getRandom(arr) {
+  var generateBtn = document.querySelector("#generate");
+}
 
 // Function to generate password with user input
 
