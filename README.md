@@ -20,12 +20,12 @@ Criteria:
   - Code validates for each input and at least one character type will be selected
   - Once prompts are answered then the password is generated and written to the page
 
-![HTML Page & Console](./assets/Screenshot%202023-01-10%20at%2023.30.51.png)
-![HTML Page & Console](./assets/Screenshot%202023-01-10%20at%2023.31.05.png)
-![HTML Page & Console](./assets/Screenshot%202023-01-10%20at%2023.31.16.png)
-![HTML Page & Console](./assets/Screenshot%202023-01-10%20at%2023.31.27.png)
-![HTML Page & Console](./assets/Screenshot%202023-01-10%20at%2023.31.36.png)
-![HTML Page & Console](./assets/Screenshot%202023-01-10%20at%2023.31.46.png)
+![HTML Page & Console](./challenge/assets/Screenshot%202023-01-10%20at%2023.30.51.png)
+![HTML Page & Console](./challenge/assets/Screenshot%202023-01-10%20at%2023.31.05.png)
+![HTML Page & Console](./challenge/assets/Screenshot%202023-01-10%20at%2023.31.16.png)
+![HTML Page & Console](./challenge/assets/Screenshot%202023-01-10%20at%2023.31.27.png)
+![HTML Page & Console](./challenge/assets/Screenshot%202023-01-10%20at%2023.31.36.png)
+![HTML Page & Console](./challenge/assets/Screenshot%202023-01-10%20at%2023.31.46.png)
 
 ## Installation
 
@@ -35,15 +35,15 @@ N/A
 
 - I first created the getPasswordOptions function which will return the user's choice regarding the type of character they wish to include in the password.
 
-  ![JS-Code-snippet](./assets/Screenshot%202023-01-10%20at%2023.39.11.png)
+  ![JS-Code-snippet](./challenge/assets/Screenshot%202023-01-10%20at%2023.39.11.png)
 
 - I then created the getRandom function which will get a random element from the pre-existing arrays with characters using the parameter arr.
 
-  ![JS-Code-snippet](./assets/Screenshot%202023-01-10%20at%2023.39.21.png)
+  ![JS-Code-snippet](./challenge/assets/Screenshot%202023-01-10%20at%2023.39.21.png)
 
 - Next, I generated the password using the generatePassword function which will save the password's lengh in a variable _passwordLength_, the user's option in another named _option_ and it will push the random elements into a new array, _pass_.
 
-  ![JS-Code-snippet](./assets/Screenshot%202023-01-10%20at%2023.35.25.png)
+  ![JS-Code-snippet](./challenge/assets/Screenshot%202023-01-10%20at%2023.35.25.png)
 
 ## Credits
 
