@@ -161,12 +161,79 @@ function generatePassword() {
 }
 // Function for getting a random element from an array
 function getRandom(arr) {
-  var generateBtn = document.querySelector("#generate");
+  return arr[Math.floor(Math.random() * arr.length)];
 }
 
 // Function to generate password with user input
 
-function generatePassword() {}
+function generatePassword() {
+  var passwordLength = prompt(
+    "Enter the desired length of your password (between 10 and 64 characters):"
+  );
+  while (passwordLength < 10 || passwordLength > 64) {
+    alert("Invalid password length! Please enter a value between 10 and 64.");
+    passwordLength = prompt(
+      "Enter the desired length of your password (between 10 and 64 characters):"
+    );
+  }
+  var option = getPasswordOptions();
+  var pass = [];
+  while (pass.length < Number(passwordLength)) {
+    if (option === "Just lowercase") {
+      pass += getRandom(lowerCasedCharacters);
+    } else if (option === "Just uppercase") {
+      pass += getRandom(upperCasedCharacters);
+    } else if (option === "Just numeric") {
+      pass += getRandom(numericCharacters);
+    } else if (option === "Just special") {
+      pass += getRandom(specialCharacters);
+    } else if (option === "Just lowercase & numeric") {
+      pass += getRandom(lowerCasedCharacters);
+      pass += getRandom(numericCharacters);
+    } else if (option === "Just lowercase & special") {
+      pass += getRandom(specialCharacters);
+      pass += getRandom(lowerCasedCharacters);
+    } else if (option === "Just lowercase & uppercase ") {
+      pass += getRandom(lowerCasedCharacters);
+      pass += getRandom(upperCasedCharacters);
+    } else if (option === "Just uppercase & numeric") {
+      pass += getRandom(upperCasedCharacters);
+      pass += getRandom(numericCharacters);
+    } else if (option === "Just uppercase & special") {
+      pass += getRandom(specialCharacters);
+      pass += getRandom(upperCasedCharacters);
+    } else if (option === "Just numeric & special") {
+      pass += getRandom(specialCharacters);
+      pass += getRandom(numericCharacters);
+    } else if (option === "Just lowercase & uppercase & numeric") {
+      pass += getRandom(lowerCasedCharacters);
+      pass += getRandom(numericCharacters);
+      pass += getRandom(upperCasedCharacters);
+    } else if (option === "Just lowercase & uppercase & special") {
+      pass += getRandom(specialCharacters);
+      pass += getRandom(lowerCasedCharacters);
+      pass += getRandom(upperCasedCharacters);
+    } else if (option === "Just uppercase & numeric & special") {
+      pass += getRandom(specialCharacters);
+      pass += getRandom(numericCharacters);
+      pass += getRandom(upperCasedCharacters);
+    } else if (option === "All") {
+      pass += getRandom(specialCharacters);
+      pass += getRandom(upperCasedCharacters);
+      pass += getRandom(numericCharacters);
+      pass += getRandom(lowerCasedCharacters);
+    }
+  }
+  if (pass.length != passwordLength) {
+    var myPass = pass.substr(0, passwordLength);
+
+    console.log(myPass, myPass.length);
+    return myPass;
+  } else {
+    console.log(pass, pass.length);
+    return pass;
+  }
+}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
