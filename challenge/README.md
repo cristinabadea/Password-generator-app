@@ -1,79 +1,72 @@
-# Module 5 Challenge: Password Generator
+<!-- @format -->
 
-## Overview
+# Password-generator-app
 
-This week’s challenge requires you to create an application that an employee can use to generate a random password based on criteria they’ve selected by modifying starter code. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
+## Description
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of Password Special Characters from the OWASP Foundation](https://www.owasp.org/index.php/Password_special_characters).
+I have created a Password geenrator app using JavaScript which will be used to generate a random password based on criteria stated below. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code found in script.js.
 
-## Instructions
+Criteria:
 
-The following image shows the web application's appearance and functionality:
+- A password is generated when the button is clicked
+  - A series of prompts are presented to the user for password criteria
+    - Length of password
+      - At least 10 characters but no more than 64.
+    - Character types
+      - Lowercase
+      - Uppercase
+      - Numeric
+      - Special characters ($@%&\*, etc)
+  - Code validates for each input and at least one character type will be selected
+  - Once prompts are answered then the password is generated and written to the page
 
-![password generator demo](./assets/05-javascript-challenge-demo.png)
+![HTML Page & Console](./assets/Screenshot%202023-01-10%20at%2023.30.51.png)
+![HTML Page & Console](./assets/Screenshot%202023-01-10%20at%2023.31.05.png)
+![HTML Page & Console](./assets/Screenshot%202023-01-10%20at%2023.31.16.png)
+![HTML Page & Console](./assets/Screenshot%202023-01-10%20at%2023.31.27.png)
+![HTML Page & Console](./assets/Screenshot%202023-01-10%20at%2023.31.36.png)
+![HTML Page & Console](./assets/Screenshot%202023-01-10%20at%2023.31.46.png)
 
+## Installation
 
-* Generate a password when the button is clicked
-  * Present a series of prompts for password criteria
-    * Length of password
-      * At least 10 characters but no more than 64.
-    * Character types
-      * Lowercase
-      * Uppercase
-      * Numeric
-      * Special characters ($@%&*, etc)
-  * Code should validate for each input and at least one character type should be selected
-  * Once prompts are answered then the password should be generated and displayed in an alert or written to the page
+N/A
 
-## Grading Requirements
+## Usage
 
-This challenge is graded based on the following criteria: 
+- I first created the getPasswordOptions function which will return the user's choice regarding the type of character they wish to include in the password.
 
-### Technical Acceptance Criteria: 40%
+  ![JS-Code-snippet](./assets/Screenshot%202023-01-10%20at%2023.39.11.png)
 
-* Satisfies all of the above acceptance criteria plus the following:
+- I then created the getRandom function which will get a random element from the pre-existing arrays with characters using the parameter arr.
 
-  * The challenge should not produce any errors in the console when you inspect it using Chrome DevTools.
+  ![JS-Code-snippet](./assets/Screenshot%202023-01-10%20at%2023.39.21.png)
 
-### Deployment: 32%
+- Next, I generated the password using the generatePassword function which will save the password's lengh in a variable _passwordLength_, the user's option in another named _option_ and it will push the random elements into a new array, _pass_.
 
-* Application deployed at live URL.
+  ![JS-Code-snippet](./assets/Screenshot%202023-01-10%20at%2023.35.25.png)
 
-* Application loads with no errors.
+## Credits
 
-* Application GitHub URL submitted.
+N/A
 
-* GitHub repository that contains application code.
+## License
 
-### Application Quality: 15%
+MIT License
 
-* Application user experience is intuitive and easy to navigate.
+## Badges
 
-* Application user interface style is clean and polished.
+N/A
 
-* Application resembles the mock-up functionality provided in the challenge instructions.
+## Features
 
-### Repository Quality: 13%
+N/A
 
-* Repository has a unique name.
+## How to Contribute
 
-* Repository follows best practices for file structure and naming conventions.
+N/A
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+## Tests
 
-* Repository contains multiple descriptive commit messages.
+N/A
 
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
----
-
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+## Deployed website
